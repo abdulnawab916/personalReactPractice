@@ -81,6 +81,6 @@ export default App;
 // block, then you need to put {...} around whatever it is.
 // This ensures to us that React will be able to recognize it
 /* 
-
-
+was having issues setting git up, 
+had to remove the remote from being origin or whatever
 */
