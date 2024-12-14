@@ -1,3 +1,7 @@
+// TO DO immediately
+// Add in the event listener for the buttons when they are clicked
+// and have it naviagate to various projects that I have worked on
+
 function generatingRandomNumber(maxLength) {
   return Math.floor(Math.random() * (maxLength +1));
 }
@@ -31,6 +35,7 @@ TODO:
     1. SWE Intern @ Design2Data
     2. SWE Intern @ ...
 */
+
 
 // when using props, the most common formality when using them is to use
 // props as the main parameter, then you acess the items that way, they
@@ -95,9 +100,28 @@ export default App;
   had to remove the remote from being origin or whatever
 */
 /* 
-Notes of what I learned
+TODO:
+- Add in buttons that I can click and they will take me to something
+  on my resume, what is something from my resume that I should put on here?
+- Ideas:
+I could create the buttons for various projects that I have worked on
+- H2 tag with Projects Label
+- and then various buttons that you could click to take us to different
+- projects with a description of what I built
+- have github link in there as well?
+- maybe incorporate a little YT Video link where I could be explaining
+- the core concepts behind the project.
+- have this play in browser by React. There has to be some special shit that can
+- do this for me
+MUST DO:
+ADD IN A NAV BAR, NEED THIS!
+- change the color of whatever that purple is, need to change this to 
+- a color that matches me more
+- incorporate Ubuntu font?
 
 
 
-
+- maybe add in some crazy data scraping that runs on a server
+- on a docker container
+- this would be a really cool feature
 */
