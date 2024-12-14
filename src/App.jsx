@@ -9,19 +9,17 @@ function Header() {
   return (
     <header>
         <h1>Abdul Hanan Nawab</h1>
-        <p>a { potentialNames }</p>
         <p>
         Currently a Senior at the University of California, Davis,
-        majoring in Computer Science, College of Engineering
+        majoring in Computer Science, specifically the College of Engineering
         </p>
+        <br />
         <p>
-          I am actively seeking full-time roles for the year of 2025 post-grad
+          I am actively seeking full-time roles!
         </p>
       </header>
     )
 }
-
-
 
 // creating a new component function that we 
 // can pass various attributes into it
@@ -45,6 +43,7 @@ function WorkExperience(props) {
   return (
     <li>
       <h3>{props.title}</h3>
+      <h5>{props.company}</h5>
       <p>{props.description}</p>
     </li> 
   );
@@ -54,20 +53,30 @@ function WorkExperience(props) {
 function App() {
   // Utilizing props within the main component to display 
   // my work experiences
+
+  // Potential issues,
+  // might have an issue with the first line in my work
+  // experience
+  // Things I can add to use props
+  // I should add a member that is stackUsed + technologies used at the
+  // particular organization that I worked at
   return (
     <div>
       <main>
         <Header></Header>
         <section id= "core-concepts">
-        <h2>my prior work experience:</h2>
+        <h2>My previous work experience(s):</h2>
         <ul>
           <WorkExperience title = "Sotware Engineer Intern"
-                          description = "Worked as a SWE for the corporation in Davis..."/>
+                          company = "Design2Data"
+                          description = "Built a research-based application using React.js, & AWS. Created a seemless user-based tutorial"/>
           <WorkExperience title = "Software Engineer Intern"
-                          description = "Led a team for ARC's Design hub as the lead Software Engineer" 
+                          company = "DesignHub"
+                          description = "Developed React Native based application to assist ADA-students with locating bathrooms efficiently" 
                           />
           <WorkExperience title = "R&D Hardware Engineering Intern"
-                          description = "Conducted vast research on various chipsets that..."/>
+                          company = "NASA"
+                          description = "Conducted vast research on various chipsets, conducetd firmware research, authored 15 page research paper"/>
         </ul>
         </section>
       </main>
@@ -76,11 +85,19 @@ function App() {
 }
 
 export default App;
+
 // Notes
 // When you want to write any type of JS function inside the HTML element shit in the return 
 // block, then you need to put {...} around whatever it is.
 // This ensures to us that React will be able to recognize it
 /* 
-was having issues setting git up, 
-had to remove the remote from being origin or whatever
+  was having issues setting git up, 
+  had to remove the remote from being origin or whatever
+*/
+/* 
+Notes of what I learned
+
+
+
+
 */
