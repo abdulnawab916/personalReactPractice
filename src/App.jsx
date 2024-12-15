@@ -1,15 +1,10 @@
 // TO DO immediately
 // Add in the event listener for the buttons when they are clicked
 // and have it naviagate to various projects that I have worked on
-
-function generatingRandomNumber(maxLength) {
-  return Math.floor(Math.random() * (maxLength +1));
-}
-
-const differentNames = ["student", "innovator", "engineer"]
+// add in the tabButton as a exported file that can be used anywhere else
+// I want to be able to use it within this header
 function Header() {
   // randomly picks a name each time that the page is loaded up
-  const potentialNames = differentNames[generatingRandomNumber(2)];
   return (
     <header>
         <h1>Abdul Hanan Nawab</h1>
@@ -56,15 +51,27 @@ function WorkExperience(props) {
 
 // Here is the main app componet
 function App() {
-  // Utilizing props within the main component to display 
-  // my work experiences
+  // fucntion to handle evenListen onclick
+  // object destructuring
+  function handleClick({ children, onClickEvent} )
+  { 
+    // what do I want to do here?
+    // TODO:
+    /*
+      - Whenever a button is clicked, 
+      - I want info about my project to show, 
+      - and I want to be abnle to see what the hell the project is about
+      - I should draw a schematic for what I want this to look like
+      - before I start coding
+      
+      - a snippet of the code w/ syntax highlighting
+      - a YT video that automatically plays and simulates some of the
+      - function calls that are running and how the project works conceptually
+      - and then, I want to add in my own explanation of what was going on
+    */
 
-  // Potential issues,
-  // might have an issue with the first line in my work
-  // experience
-  // Things I can add to use props
-  // I should add a member that is stackUsed + technologies used at the
-  // particular organization that I worked at
+  }
+  // change the button elements to be tabButtons coming in from a different file instead
   return (
     <div>
       <main>
@@ -83,6 +90,13 @@ function App() {
                           company = "NASA"
                           description = "Conducted vast research on various chipsets, conducetd firmware research, authored 15 page research paper"/>
         </ul>
+        </section>
+        <section id = "examples">
+          <h2>Projects:</h2>
+          <menu>
+          <li><button><i>User Level Thread Mananger</i></button></li>
+          <li><button><i>$GoatedShell</i></button></li>
+          </menu>
         </section>
       </main>
     </div>
